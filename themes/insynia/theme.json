@@ -1,0 +1,277 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"name": "Base",
+					"slug": "base",
+					"color": "#F5F8F3"
+				},
+				{
+					"name": "Surface",
+					"slug": "surface",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Contrast",
+					"slug": "contrast",
+					"color": "#122218"
+				},
+				{
+					"name": "Accent",
+					"slug": "accent",
+					"color": "#9FE870"
+				},
+				{
+					"name": "Accent Strong",
+					"slug": "accent-strong",
+					"color": "#163300"
+				},
+				{
+					"name": "Muted",
+					"slug": "muted",
+					"color": "#456050"
+				},
+				{
+					"name": "Stroke",
+					"slug": "stroke",
+					"color": "#D2E3D1"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "700px",
+			"wideSize": "1220px"
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "XS",
+					"slug": "30",
+					"size": "16px"
+				},
+				{
+					"name": "S",
+					"slug": "40",
+					"size": "24px"
+				},
+				{
+					"name": "M",
+					"slug": "50",
+					"size": "clamp(24px, 4vw, 42px)"
+				},
+				{
+					"name": "L",
+					"slug": "60",
+					"size": "clamp(36px, 6vw, 68px)"
+				},
+				{
+					"name": "XL",
+					"slug": "70",
+					"size": "clamp(52px, 7vw, 92px)"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"name": "Manrope",
+					"slug": "manrope",
+					"fontFamily": "Manrope, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "200 800",
+							"src": [
+								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+							]
+						}
+					]
+				},
+				{
+					"name": "Fira Code",
+					"slug": "fira-code",
+					"fontFamily": "\"Fira Code\", monospace",
+					"fontFace": [
+						{
+							"fontFamily": "\"Fira Code\"",
+							"fontStyle": "normal",
+							"fontWeight": "300 700",
+							"src": [
+								"file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"slug": "small",
+					"size": "0.9rem",
+					"fluid": false
+				},
+				{
+					"name": "Medium",
+					"slug": "medium",
+					"size": "1rem",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.12rem"
+					}
+				},
+				{
+					"name": "Large",
+					"slug": "large",
+					"size": "1.35rem",
+					"fluid": {
+						"min": "1.1rem",
+						"max": "1.35rem"
+					}
+				},
+				{
+					"name": "XL",
+					"slug": "x-large",
+					"size": "2rem",
+					"fluid": {
+						"min": "1.7rem",
+						"max": "2.4rem"
+					}
+				},
+				{
+					"name": "XXL",
+					"slug": "xx-large",
+					"size": "2.8rem",
+					"fluid": {
+						"min": "2.1rem",
+						"max": "3.3rem"
+					}
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"spacing": {
+			"blockGap": "1.25rem",
+			"padding": {
+				"left": "var:preset|spacing|50",
+				"right": "var:preset|spacing|50"
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|manrope",
+			"fontSize": "var:preset|font-size|large",
+			"fontWeight": "400",
+			"letterSpacing": "-0.01em",
+			"lineHeight": "1.45"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "700",
+					"letterSpacing": "-0.03em",
+					"lineHeight": "1.08"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var:preset|color|contrast"
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "999px"
+				},
+				"color": {
+					"background": "var:preset|color|accent-strong",
+					"text": "var:preset|color|surface"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.8rem",
+						"right": "1.25rem",
+						"bottom": "0.8rem",
+						"left": "1.25rem"
+					}
+				},
+				"typography": {
+					"fontWeight": "700"
+				},
+				"variations": {
+					"outline": {
+						"border": {
+							"color": "var:preset|color|accent-strong",
+							"width": "1px"
+						},
+						"color": {
+							"text": "var:preset|color|accent-strong"
+						}
+					}
+				}
+			},
+			"core/group": {
+				"border": {
+					"radius": "14px"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontSize": "1rem",
+					"fontWeight": "700"
+					
+				}
+			},
+			"core/post-featured-image": {
+				"border": {
+					"radius": "12px"
+				}
+			},
+			"core/code": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|fira-code",
+					"fontSize": "var:preset|font-size|medium"
+				},
+				"color": {
+					"background": "#EBF4EA"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
+}
