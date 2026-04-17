@@ -99,7 +99,7 @@ get_header();
 						<?php esc_html_e( 'EJLS partners with families, educators, and local organizations to create practical learning pathways that build confidence and long-term growth.', 'insynia' ); ?>
 					</p>
 				</header>
-				<div class="grid grid--3">
+				<div class="grid grid--3 about-us__cards">
 					<article class="entry stack stack--sm">
 						<h3><?php esc_html_e( 'Our Mission', 'insynia' ); ?></h3>
 						<p><?php esc_html_e( 'Deliver accessible, high-quality academic support that strengthens core skills, curiosity, and student confidence.', 'insynia' ); ?></p>
