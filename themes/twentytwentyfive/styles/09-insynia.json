@@ -1,0 +1,132 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
+	"title": "Insynia",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#F4F8F6",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#16302B",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#9FE870",
+					"name": "Accent 1",
+					"slug": "accent-1"
+				},
+				{
+					"color": "#D9EEE3",
+					"name": "Accent 2",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#2E6B5F",
+					"name": "Accent 3",
+					"slug": "accent-3"
+				},
+				{
+					"color": "#4D6B63",
+					"name": "Accent 4",
+					"slug": "accent-4"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Accent 5",
+					"slug": "accent-5"
+				},
+				{
+					"color": "#16302B29",
+					"name": "Accent 6",
+					"slug": "accent-6"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Manrope",
+					"slug": "manrope",
+					"fontFamily": "\"Sora\", \"Avenir Next\", \"Segoe UI\", sans-serif"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|manrope",
+			"fontWeight": "400",
+			"lineHeight": "1.65"
+		},
+		"blocks": {
+			"core/group": {
+				"border": {
+					"radius": "22px"
+				},
+				"color": {
+					"background": "var:preset|color|accent-5"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"fontWeight": "600",
+					"letterSpacing": "0.02em"
+				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontWeight": "650",
+					"letterSpacing": "-0.02em",
+					"lineHeight": "1.18"
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"border": {
+					"radius": "999px",
+					"color": "transparent",
+					"width": "1px"
+				},
+				"color": {
+					"background": "var:preset|color|accent-3",
+					"text": "var:preset|color|accent-5"
+				},
+				":hover": {
+					"color": {
+						"background": "color-mix(in srgb, var(--wp--preset--color--accent-3) 88%, black 12%)",
+						"text": "var:preset|color|accent-5"
+					}
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|manrope",
+					"fontWeight": "600",
+					"lineHeight": "1.15",
+					"letterSpacing": "-0.02em"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var:preset|color|accent-3"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
+				}
+			}
+		}
+	}
+}

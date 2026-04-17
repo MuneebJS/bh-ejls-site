@@ -1,0 +1,2 @@
+# Translation files (.pot / .po / .mo) live here.
+# Generate a .pot with: wp i18n make-pot . languages/insynia.pot

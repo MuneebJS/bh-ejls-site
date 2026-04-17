@@ -1,0 +1,6 @@
+# Drop feature modules here.
+#
+# Each PHP file in this directory is auto-loaded by functions.php.
+# To add a feature: create inc/features/{name}.php with
+#   <?php defined( 'ABSPATH' ) || exit;
+# then self-enqueue any CSS/JS the feature needs.
