@@ -96,6 +96,10 @@
 	grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
 }
 
+.about-us__cards {
+	grid-template-columns: 1fr;
+}
+
 @media (min-width: 720px) {
 	.grid--2 {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
