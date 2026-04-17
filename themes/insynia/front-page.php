@@ -37,27 +37,6 @@ get_header();
 								</section>
 
 								<section class="stack stack--lg">
-									<h2><?php esc_html_e( 'About Us', 'insynia' ); ?></h2>
-									<p>
-										<?php esc_html_e( 'EJLS is a community-focused learning initiative that partners with families, educators, and local organizations to support every learner from foundation to future goals.', 'insynia' ); ?>
-									</p>
-									<div class="grid grid--3">
-										<article class="entry stack stack--sm">
-											<h3><?php esc_html_e( 'Our Mission', 'insynia' ); ?></h3>
-											<p><?php esc_html_e( 'Deliver accessible, high-quality educational support that builds confidence, curiosity, and long-term academic success.', 'insynia' ); ?></p>
-										</article>
-										<article class="entry stack stack--sm">
-											<h3><?php esc_html_e( 'What We Do', 'insynia' ); ?></h3>
-											<p><?php esc_html_e( 'We run after-school programs, mentorship sessions, and family engagement workshops designed around practical, measurable outcomes.', 'insynia' ); ?></p>
-										</article>
-										<article class="entry stack stack--sm">
-											<h3><?php esc_html_e( 'Why It Matters', 'insynia' ); ?></h3>
-											<p><?php esc_html_e( 'By combining personalized support with community collaboration, we help students stay engaged and progress with purpose.', 'insynia' ); ?></p>
-										</article>
-									</div>
-								</section>
-
-								<section class="stack stack--lg">
 									<h2><?php esc_html_e( 'Featured Programs', 'insynia' ); ?></h2>
 									<div class="grid grid--3">
 										<article class="post-card">
@@ -104,6 +83,27 @@ get_header();
 								</section>
 							</div>
 						<?php endif; ?>
+
+						<section class="stack stack--lg">
+							<h2><?php esc_html_e( 'About Us', 'insynia' ); ?></h2>
+							<p>
+								<?php esc_html_e( 'EJLS is a community-focused learning initiative that partners with families, educators, and local organizations to support every learner from foundation to future goals.', 'insynia' ); ?>
+							</p>
+							<div class="grid grid--3">
+								<article class="entry stack stack--sm">
+									<h3><?php esc_html_e( 'Our Mission', 'insynia' ); ?></h3>
+									<p><?php esc_html_e( 'Deliver accessible, high-quality educational support that builds confidence, curiosity, and long-term academic success.', 'insynia' ); ?></p>
+								</article>
+								<article class="entry stack stack--sm">
+									<h3><?php esc_html_e( 'What We Do', 'insynia' ); ?></h3>
+									<p><?php esc_html_e( 'We run after-school programs, mentorship sessions, and family engagement workshops designed around practical, measurable outcomes.', 'insynia' ); ?></p>
+								</article>
+								<article class="entry stack stack--sm">
+									<h3><?php esc_html_e( 'Why It Matters', 'insynia' ); ?></h3>
+									<p><?php esc_html_e( 'By combining personalized support with community collaboration, we help students stay engaged and progress with purpose.', 'insynia' ); ?></p>
+								</article>
+							</div>
+						</section>
 					</article>
 				<?php endwhile; ?>
 			<?php endif; ?>
