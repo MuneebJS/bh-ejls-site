@@ -1,0 +1,89 @@
+/*
+ * Insynia — Modern CSS Reset
+ *
+ * Minimal, opinionated reset. Normalizes box model, removes default margins,
+ * and sets accessible defaults. Customize cautiously — changes ripple
+ * through the whole theme.
+ */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	tab-size: 4;
+	scroll-behavior: smooth;
+	color-scheme: light dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	line-height: var(--leading-normal);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input, button, textarea, select {
+	font: inherit;
+	color: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Remove focus outline for mouse users while preserving it for keyboard */
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* Honor hidden attribute universally */
+[hidden] {
+	display: none !important;
+}

@@ -1,0 +1,3 @@
+# Feature-specific stylesheets live here.
+# Each feature in inc/features/*.php self-enqueues its own CSS from this folder,
+# typically depending on 'insynia-components' so it layers correctly.

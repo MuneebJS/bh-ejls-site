@@ -1,0 +1,3 @@
+# Static image assets shipped with the theme (logos, placeholders, icons).
+# Media uploaded through the WordPress admin is NOT stored here — that goes
+# into wp-content/uploads/.
