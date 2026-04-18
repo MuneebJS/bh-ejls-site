@@ -77,6 +77,14 @@
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size"><?php esc_html_e( 'Office: 123 Example Street, Suite 400, Springfield, IL 62701', 'twentytwentyfive' ); ?></p>
 			<!-- /wp:paragraph -->
+			<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#000000","openInNewTab":true,"size":"has-small-icon-size","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
+			<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only">
+				<!-- wp:social-link {"url":"#","service":"facebook"} /-->
+				<!-- wp:social-link {"url":"#","service":"instagram"} /-->
+				<!-- wp:social-link {"url":"#","service":"x"} /-->
+				<!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+			</ul>
+			<!-- /wp:social-links -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
 				<?php
